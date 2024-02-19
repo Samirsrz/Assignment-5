@@ -108,6 +108,15 @@ for(const btn of allBtn){
 
                 else if(couponCode === 'Couple 20'){
                     const discountAmount = totalPrice * 0.20;
+                   
+                    const pEntering = document.getElementById('discount-show');
+                    const pTag = createElement("p");
+                    pTag.innerText = 'Discount';
+                    
+                    pEntering.appendChild(pTag);
+
+ 
+
                     const grandTotal = totalPrice - discountAmount;
                     grandTotalElement.textContent = grandTotal.toFixed(2);
 

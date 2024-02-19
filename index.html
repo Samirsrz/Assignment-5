@@ -12,7 +12,7 @@
     <section id="first-body" class="bg-gray-100">
 
     
-   <header class="mx-auto w-5/6">
+   <header class="mx-auto w-80% lg:w-5/6">
     <div class="navbar bg-base-100">
         <div class="navbar-start">
           <div class="dropdown">
@@ -44,7 +44,7 @@
 
 <!-- Banner section -->
     
-<div class="hero h-[600px] bg-cover rounded-2xl" style="background-image: url(images/banner.png);">
+<div class="hero lg:h-[600px] bg-cover rounded-2xl" style="background-image: url(images/banner.png);">
     <div class="hero-overlay bg-opacity-5"></div>
     <div class="hero-content text-center text-neutral-content">
       <div class="max-w-md">
@@ -58,13 +58,13 @@
    </header>
 
 
-   <main  class="mx-auto w-5/6 my-24">
+   <main  class="mx-auto w-3/4 lg:w-5/6 my-24">
     <!-- offer section -->
   <section>
     <h3 class="text-center text-3xl font-extrabold">Best offers for you</h3>
    
-    <div class="flex justify-around my-14">
-      <div class="bg-yellow-300 rounded-lg text-black flex gap-9 p-2 w-[530px] justify-around items-center ">
+    <div class="flex flex-col lg:flex-row gap-3   justify-center items-center lg:justify-around my-14">
+      <div class="bg-yellow-300 rounded-lg text-black flex gap-9 p-2 lg:w-[530px] justify-around items-center ">
         <div class="text-center">
             <h2 class="text-2xl font-bold pl-4">15% OFF</h2>
             <p>on your next purchase</p>
@@ -84,7 +84,7 @@
       </div>
       
       <div>
-        <div class="bg-pink-200 rounded-lg text-black flex gap-9 p-2 w-[530px] justify-around items-center ">
+        <div class="bg-pink-200 rounded-lg text-black flex gap-9 p-2 lg:w-[530px] justify-around items-center ">
             <div class="text-center">
                 <h2 class="text-2xl font-bold pl-4">20% OFF</h2>
                 <p>on your next purchase</p>
@@ -105,13 +105,13 @@
       </div>
 
     </div>
-   <div class="mx-auto w-44"> <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-white text-lime-400 border-lime-600 ">See All Offers</button>
+   <div class="mx-auto w-44"> <button class="btn btn-xs  md:btn-md lg:btn-lg bg-white text-lime-400 border-lime-600 ">See All Offers</button>
    </div>
   </section>
 
 
  <!--Paribahan section -->
-        <section id="paribahan-section" class="mt-52 border-gray-200 p-7 bg-gray-100">
+        <section id="paribahan-section" class="mt-20 lg:mt-52 border-gray-200 p-2 lg:p-7 bg-gray-100">
             
           <div class="bg-white rounded-lg">
             <div class="text-center p-3">
@@ -120,20 +120,20 @@
                                                                   
               </div>
 
- <div class="w-auto p-3 bg-white flex gap-36 mt-6 ">
+ <div class="w-auto p-3 bg-white flex flex-col lg:flex-row  gap-36 mt-6 ">
     <div class="ml-24">
       <p class="text-3xl font-bold"><img class="inline mr-4" src="images/bus-logo.png" alt="">GreenLine Paribahan</p>
       <p class="ml-24 mb-7 text-gray-500">AC_business_class! Enjoy</p>
     </div>
 
-    <div class="w-52 bg-lime-100 h-9 text-center items-center rounded-lg text-lime-600">
+    <div class="lg:w-52 bg-lime-100 lg:h-9 text-center items-center rounded-lg text-lime-600">
       <p><img class="inline" src="images/seat-green.png" alt=""><span id="seats-left"> 8</span> Seats Left</p>
     </div>
 
 
  </div>
-   <div class="flex justify-around mt-1 pb-7">
-      <div class="p-12 bg-gray-100 border-2 w-[1000px] rounded-lg">
+   <div class="flex flex-col  lg:flex-row justify-around mt-1 pb-7">
+      <div class="p-12 bg-gray-100 border-2 lg:w-[1000px] rounded-lg">
           <div class="flex items-center my-7 rounded-lg justify-between border-b-2 border-dotted border-gray-400">
                <p class="p-3 ">Route</p>
                <p class="font-bold  mb-4">Dhaka-Sylhet</p>
@@ -144,7 +144,7 @@
                <p class="font-bold mb-4">9:00pm</p>
           </div >
           
-          <div class="flex   my-7 justify-between border-b-2 border-dotted border-gray-400">
+          <div class="flex flex-col lg:flex-row   my-7 justify-between border-b-2 border-dotted border-gray-400">
               <div class="bg-gray-300 p-2 rounded-lg mb-3">
                     <p>Boarding Point - Laxmipur</p>
               </div>
@@ -162,9 +162,9 @@
      </div>
 
      <div class="border-l-2 border-dotted p-6" >
-      <img src="images/fare.png" alt="">
-         <h1 class="text-3xl font-extrabold ">550  <br> taka</h1>
-         <p>per seat</p>
+      <img class="text-center" src="images/fare.png" alt="">
+         <h1 class="text-3xl text-center font-extrabold ">550  <br> taka</h1>
+         <p class="text-center">per seat</p>
      </div>
 
 
@@ -174,26 +174,29 @@
 
         </section>
 
+
+
+
 <section class= "bg-white rounded-lg mt-0">
     <!-- seat section -->
-    <div class=" grid grid-cols-2 justify-between gap-44 p-7 ">
+    <div class=" grid lg:grid-cols-2 justify-between gap-20 lg:gap-44 lg:p-7  p-4">
 
           <div>
-            <h1 class="border-b-2 border-dashed text-2xl py-3 font-bold">Select Your Seat</h1>
+            <h1 class="lg:border-b-2 lg:border-dashed text-2xl py-3 font-bold">Select Your Seat</h1>
       
-            <div class="my-3 flex justify-between border-b-2 border-dashed">
-                <p><img class="inline mr-2" src="images/seat-gray.png" alt="">Available</p>
-                <p><img class="inline mr-2" src="images/seat-green-filled.png" alt="">Selected</p>
+            <div class="my-3 flex lg:flex-row flex-col  justify-between border-b-2 border-dashed">
+                <p><img class="inline mr-2 lg:border-b-2 lg:border-dashed" src="images/seat-gray.png" alt="">Available</p>
+                <p><img class="inline mr-2 lg:border-b-2 lg:border-dashed" src="images/seat-green-filled.png" alt="">Selected</p>
             </div>
             
-            <div class="ml-[526px]">
+            <div class=" ml-[160px]  lg:ml-[526px]">
                 <button id="A1" class="add-btn  border-none  btn w-20" ><img class="w-[24px] h-[24px]" src="images/steering-wheel-14.png" alt=""></button>
              
             </div>
             
             <!-- BUTTONS OF SEATS -->
 
-            <div class="grid justify-center items-center gap-4 grid-cols-4 mt-2">
+            <div class="grid grid-cols-2 justify-center items-center gap-4 lg:grid-cols-4 mt-2">
                 <button id="A1" class="add-btn  border-none  btn w-20">A1</button>
                 <button id="B1" class="add-btn  border-none  btn w-20">A2</button>
                 <button id="A2" class="add-btn  border-none  btn w-20">A3</button>
@@ -275,8 +278,12 @@
             </div>
          
 
-         <h3 class=" text-xl font-bold my-2">Total Price = <span id="total-price"> 0
-               </span>BDT</h3>
+            <div id="discount-show">
+  
+        <h3 class=" text-xl font-bold my-2">Total Price = <span id="total-price"> 0
+        </span>BDT</h3>
+        
+      </div>
  
        <div class="flex justify-between">
          <input id="coupon" class="p-4 border-b-2" type="text" placeholder="have a coupon?">
