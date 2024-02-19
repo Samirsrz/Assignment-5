@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <section id="first-body" class="">
+
+    
+   <header class="mx-auto w-5/6">
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About </a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost font-extrabold text-2xl">P-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-gray-600">Home</a></li>
+            <li><a class="text-gray-600">About </a></li>
+            <li><a class="text-gray-600">Destination</a></li>
+            <li><a class="text-gray-600">Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn bg-lime-100 text-lime-600 font-bold">Bus <img src="images/bus-icon.png" alt=""></a>
+        </div>
+      </div>
+
+
+<!-- Banner section -->
+    
+<div class="hero h-[600px] bg-cover rounded-2xl" style="background-image: url(images/banner.png);">
+    <div class="hero-overlay bg-opacity-5"></div>
+    <div class="hero-content text-center text-neutral-content">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-5xl font-extrabold text-white">End-to-End Travel with<br><span class="text-lime-600">P-Paribahan</span></h1>
+        <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+        <button id="started-button" class="btn bg-lime-600 text-black font-bold border-none">Get Started</button>
+      </div>
+    </div>
+  </div>
+
+   </header>
+
+
+   <main  class="mx-auto w-5/6 my-24">
+    <!-- offer section -->
+  <section>
+    <h3 class="text-center text-3xl font-extrabold">Best offers for you</h3>
+   
+    <div class="flex justify-around my-14">
+      <div class="bg-yellow-300 rounded-lg text-black flex gap-9 p-4 w-[573px] justify-around items-center ">
+        <div class="text-center">
+            <h2 class="text-2xl font-bold pl-4">15% OFF</h2>
+            <p>on your next purchase</p>
+            <p class="text-gray-500">use by January 2024</p>
+        </div>
+        <!-- coupon-code -->
+        <div class="text-center border-l-2 border-dotted border-lime-600 flex flex-col gap-4 ">
+           <h2 class="text-2xl font-bold pl-4">NEW15</h2>
+           <p class="text-gray-500 pl-4" >Coupon Code</p>
+        </div>
+
+
+      </div>
+      
+      <div>
+        <div class="bg-pink-200 rounded-lg text-black flex gap-9 p-4 w-[573px] justify-around items-center ">
+            <div class="text-center">
+                <h2 class="text-2xl font-bold pl-4">20% OFF</h2>
+                <p>on your next purchase</p>
+                <p class="text-gray-500">use by January 2024</p>
+            </div>
+            <!-- coupon-code -->
+            <div class="text-center border-l-2 border-dotted border-lime-600 flex flex-col gap-4 ">
+               <h2 class="text-2xl font-bold pl-4">Couple20</h2>
+               <p class="text-gray-500 pl-4" >Coupon Code</p>
+            </div>
+    
+    
+          </div>
+
+      </div>
+
+    </div>
+   <div class="mx-auto w-44"> <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-white text-lime-400 border-lime-600 ">See All Offers</button>
+   </div>
+  </section>
+
+
+ <!--Paribahan section -->
+        <section id="paribahan-section" class="my-52 border-gray-200 p-7 bg-gray-100">
+            
+          <div class="bg-white rounded-lg">
+            <div class="text-center">
+                <h1 class="text-3xl font-bold">P-Paribahan</h1>
+                <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quasi doloremque tempore. Ad neque expedita, placeat repellendus provident laborum impedit.</p>
+                                                                  
+              </div>
+
+ <div class="w-auto p-6 bg-white flex gap-36 mt-14 ">
+    <div class="ml-10">
+      <p class="text-3xl font-bold"><img class="inline mr-4" src="images/bus-logo.png" alt="">GreenLine Paribahan</p>
+      <p class="ml-24 mb-7 text-gray-500">AC_business_class! Enjoy</p>
+    </div>
+
+    <div class="w-52 bg-lime-100 h-9 text-center items-center rounded-lg text-lime-600">
+      <p><img class="inline" src="images/seat-green.png" alt=""><span id="seats-left"> 8</span> Seats Left</p>
+    </div>
+
+
+ </div>
+   <div class="flex justify-around mt-7">
+      <div class="p-12 bg-gray-100 border-2 w-[1000px] rounded-lg">
+          <div class="flex  my-7  justify-around border-b-2 border-dotted border-gray-400">
+               <p>Route</p>
+               <p class="font-bold  mb-4">Dhaka-Sylhet</p>
+          </div >
+
+          <div class="flex   my-7 justify-around border-b-2 border-dotted border-gray-400">
+               <p>Departure-time</p>
+               <p class="font-bold mb-4">9:00pm</p>
+          </div >
+
+     </div>
+
+     <div class="border-l-2 border-dotted p-6" >
+      <img src="images/fare.png" alt="">
+         <h1 class="text-3xl font-extrabold ">550  <br> taka</h1>
+         <p>per seat</p>
+     </div>
+
+
+
+   </div>
+          </div>
+
+        </section>
+
+<section class= "bg-white">
+    <!-- seat section -->
+    <div class=" grid grid-cols-2 justify-between gap-44 p-7">
+
+          <div>
+            <h1 class="border-b-2 border-dashed text-2xl py-3 font-bold">Select Your Seat</h1>
+      
+            <div class="my-3 flex justify-between border-b-2 border-dashed">
+                <p><img class="inline mr-2" src="images/seat-gray.png" alt="">Available</p>
+                <p><img class="inline mr-2" src="images/seat-green-filled.png" alt="">Selected</p>
+            </div>
+      
+              <div class="grid justify-center items-center gap-4 grid-rows-2 grid-cols-4">
+                <button  id="A1" class="add-btn  border-none  btn w-20">A1</button>
+                <button  id="B1"  class="add-btn  border-none btn w-20">B1</button>
+                <button  id="A2" class="add-btn  border-none  btn w-20">A2</button>
+                <button  id="B2" class="add-btn  border-none  btn w-20">B2</button>
+                <button  id="C1" class="add-btn  border-none  btn w-20">C1</button>
+                <button  id="C2" class="add-btn  border-none  btn w-20">C2</button>
+                <button  id="D1" class="add-btn  border-none  btn w-20">D1</button>
+                <button  id="D2" class="add-btn border-none   btn w-20">D2</button>
+
+
+
+              </div>
+
+
+
+
+          </div>
+
+       <div>
+            <h1 class="text-2xl py-3 font-bold">Select Your Seat</h1>
+
+
+            <div  class="bg-gray-100 flex justify-around rounded-lg">
+               
+                <ul id="selected-seats">
+               <li  class="text-xl font-bold">Seat <span class="text-green-400" id="seats-booking">0</span></li>
+               </ul>
+
+         
+                <ul id="selected-class">
+                   <li class="text-xl font-bold">Class</li>
+                </ul>
+
+                <ul id="selected-price">
+                      <li class="text-xl font-bold">price</li>
+
+                </ul>
+            </div>
+         
+
+         <h3 class=" text-xl font-bold my-2">Total Price = <span id="total-price"> 0
+               </span>BDT</h3>
+ 
+       <div class="flex justify-between">
+         <input id="coupon" class="p-4 border-b-2" type="text" placeholder="have a coupon?">
+         <button id="apply-btn" class="h-8 px-5 rounded-lg btn bg-green-400 font-bold">Apply</button>
+         
+    </div>
+
+         <h2 class=" text-xl font-bold my-2">Grand Total = <span id="grand-total">0</span></h2>
+
+         <button id="next-button" class="btn border-none bg-green-400 text-2xl text-black btn-secondary w-full mt-8">Next</button>
+       </div>
+
+
+
+
+
+
+
+
+
+     </div>
+
+</section>
+
+
+
+   </main>
+
+
+
+
+
+
+   <footer class="footer p-10 bg-black text-neutral-content">
+  <div class="flex w-3/4 items-center justify-between">
+    <div>
+        <aside>
+            <h2 class="text-4xl font-bold text-white">P-Paribahan</h2>
+            <p>P-ticket is a good platform<br>to make your journey better</p>
+          </aside> 
+      </div>
+    
+       <div>
+        <nav>
+            <h6 class="footer-title">Download Our App</h6> 
+            <div class=" flex gap-5 items-center justify-center border-2 p-2 w-[200px] rounded-lg">
+              <a><img class="inline" src="images/playstore.png" alt=""></a>
+              <p>Get it on <span class="text-xl font-bold">GOOGLE PLAY</span></p>
+              
+            </div>
+            <div class="flex gap-4 text-lg mt-5 underline text-blue-600 ">
+                <a href="">Terms & conditions</a>
+            <a href="">Support</a>
+            <a href="">Contact</a>
+
+            </div>
+            
+          </nav>
+       </div>
+            
+  </div>
+  
+  </footer>
+
+
+
+
+
+</section>
+
+    <section id="second-body"  class="w-3/4 mx-auto mt-64 hidden">
+
+        <div class=" items-center justify-center mx-auto my-auto">
+        <div class="mockup-window border bg-base-300">
+            <div class="text-center items-center justify-center px-4 py-16 bg-base-200 ">
+                
+                <img class="text-center items-center justify-center ml-[650px]" src="images/success.png" alt="">
+                
+                
+                <div class="flex flex-col gap-4 text-center items-center justify-center">
+                    <h1 class="font-bold text-8xl text-lime-500 ">SUCCESS</h1>
+                <p>Thanks for booking in our website. You'll not regret,we are working to get the best deals for you!!</p>
+                <p class="text-gray-600">Shortly you'll find a confirmation mail in you email</p>
+                <button class="btn border-none text-white font-bold bg-lime-700 w-28">Continue</button>
+                </div>
+        </div>
+          </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+    <script src="test.js"></script>
+</body>
+</html>
