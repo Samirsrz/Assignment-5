@@ -1,25 +1,13 @@
 
-function scrollDown(sectionId) {
-    const section = document.getElementById(sectionId);
-    if (section) {
-        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-}
 
-document.getElementById('started-button').addEventListener('click', function (e) {
-    scrollToSection('paribahan-section'); 
-});
+
 
 
 
 const allBtn = document.getElementsByClassName('add-btn');
-
-
-
-
 let selectedCount = 0 ;
 
-// const allBtn = document.getElementsByClassName('add-btn');
+
 
 for(const btn of allBtn){
     btn.addEventListener('click', function(){
@@ -29,7 +17,7 @@ for(const btn of allBtn){
             return;
         }
 
-        btn.style.backgroundColor = 'green';
+        btn.style.backgroundColor = 'lime';
         btn.style.color = 'black';
         btn.disabled = true; 
         selectedCount++;
