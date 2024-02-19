@@ -22,21 +22,19 @@ let selectedCount = 0 ;
 // const allBtn = document.getElementsByClassName('add-btn');
 
 for(const btn of allBtn){
-    btn.addEventListener('click', function(e){
+    btn.addEventListener('click', function(){
       
         if(selectedCount >= 4) {
             alert('You can only select up to 4 seats.');
             return;
         }
 
-        btn.classList.add('bg-green-300');
+        btn.style.backgroundColor = 'green';
+        btn.style.color = 'black';
         btn.disabled = true; 
         selectedCount++;
+        //btn.disabled = false;
       
-      
-      
-      
-        btn.classList.add('bg-green-300');
        
       const seatsLeft = document.getElementById('seats-left');
       const correctedSeatsLeft = parseInt(seatsLeft.innerText);
@@ -50,7 +48,7 @@ for(const btn of allBtn){
 
       if(seats>=4){
 
-         btn.classList.add('bg-green-300');
+        
         
       seatsLeft.innerText = seats;
       seatsBooking.innerText = seatBooked; 
@@ -112,9 +110,9 @@ for(const btn of allBtn){
                     grandTotalElement.textContent = grandTotal.toFixed(2);
 
                     couponInput.value = '';
-                   couponInput.style.display = 'none';
+                   //couponInput.style.display = 'none';
                     
-                applyCouponButton.disabled = true;
+                applyCouponButton.display = true;
                 }
 
                 else if(couponCode === 'Couple 20'){
@@ -125,7 +123,7 @@ for(const btn of allBtn){
 
                     
                     couponInput.value = '';
-                    couponInput.style.display = 'none';
+                   // couponInput.style.display = 'none';
                     applyCouponButton.disabled = true;
 
 
