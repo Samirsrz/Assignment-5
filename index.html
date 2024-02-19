@@ -9,7 +9,7 @@
 </head>
 <body>
     
-    <section id="first-body" class="">
+    <section id="first-body" class="bg-gray-100">
 
     
    <header class="mx-auto w-5/6">
@@ -64,14 +64,18 @@
     <h3 class="text-center text-3xl font-extrabold">Best offers for you</h3>
    
     <div class="flex justify-around my-14">
-      <div class="bg-yellow-300 rounded-lg text-black flex gap-9 p-4 w-[573px] justify-around items-center ">
+      <div class="bg-yellow-300 rounded-lg text-black flex gap-9 p-2 w-[530px] justify-around items-center ">
         <div class="text-center">
             <h2 class="text-2xl font-bold pl-4">15% OFF</h2>
             <p>on your next purchase</p>
             <p class="text-gray-500">use by January 2024</p>
         </div>
+          <div>
+            <img class="" src="images/cupon-devider.png" alt="">
+          </div>
+
         <!-- coupon-code -->
-        <div class="text-center border-l-2 border-dotted border-lime-600 flex flex-col gap-4 ">
+        <div class="text-center flex flex-col gap-4 ">
            <h2 class="text-2xl font-bold pl-4">NEW15</h2>
            <p class="text-gray-500 pl-4" >Coupon Code</p>
         </div>
@@ -80,14 +84,17 @@
       </div>
       
       <div>
-        <div class="bg-pink-200 rounded-lg text-black flex gap-9 p-4 w-[573px] justify-around items-center ">
+        <div class="bg-pink-200 rounded-lg text-black flex gap-9 p-2 w-[530px] justify-around items-center ">
             <div class="text-center">
                 <h2 class="text-2xl font-bold pl-4">20% OFF</h2>
                 <p>on your next purchase</p>
                 <p class="text-gray-500">use by January 2024</p>
             </div>
+            <div>
+              <img class="" src="images/cupon-devider.png" alt="">
+            </div>
             <!-- coupon-code -->
-            <div class="text-center border-l-2 border-dotted border-lime-600 flex flex-col gap-4 ">
+            <div class="text-center flex flex-col gap-4 ">
                <h2 class="text-2xl font-bold pl-4">Couple20</h2>
                <p class="text-gray-500 pl-4" >Coupon Code</p>
             </div>
@@ -104,17 +111,17 @@
 
 
  <!--Paribahan section -->
-        <section id="paribahan-section" class="my-52 border-gray-200 p-7 bg-gray-100">
+        <section id="paribahan-section" class="mt-52 border-gray-200 p-7 bg-gray-100">
             
           <div class="bg-white rounded-lg">
-            <div class="text-center">
+            <div class="text-center p-3">
                 <h1 class="text-3xl font-bold">P-Paribahan</h1>
                 <p class="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quasi doloremque tempore. Ad neque expedita, placeat repellendus provident laborum impedit.</p>
                                                                   
               </div>
 
- <div class="w-auto p-6 bg-white flex gap-36 mt-14 ">
-    <div class="ml-10">
+ <div class="w-auto p-3 bg-white flex gap-36 mt-6 ">
+    <div class="ml-24">
       <p class="text-3xl font-bold"><img class="inline mr-4" src="images/bus-logo.png" alt="">GreenLine Paribahan</p>
       <p class="ml-24 mb-7 text-gray-500">AC_business_class! Enjoy</p>
     </div>
@@ -125,7 +132,7 @@
 
 
  </div>
-   <div class="flex justify-around mt-7">
+   <div class="flex justify-around mt-1 pb-7">
       <div class="p-12 bg-gray-100 border-2 w-[1000px] rounded-lg">
           <div class="flex items-center my-7 rounded-lg justify-between border-b-2 border-dotted border-gray-400">
                <p class="p-3 ">Route</p>
@@ -136,6 +143,21 @@
                <p class="p-3">Departure-time</p>
                <p class="font-bold mb-4">9:00pm</p>
           </div >
+          
+          <div class="flex   my-7 justify-between border-b-2 border-dotted border-gray-400">
+              <div class="bg-gray-300 p-2 rounded-lg mb-3">
+                    <p>Boarding Point - Laxmipur</p>
+              </div>
+              <div class="bg-gray-300 p-2 rounded-lg mb-3">
+                     <p>Departure Point - Bogura</p>
+              </div>
+              <div class="bg-gray-300 p-2 rounded-lg mb-3">
+                        <p>Est-time: 9:00pm</p>
+
+              </div>
+          </div >
+
+
 
      </div>
 
@@ -152,9 +174,9 @@
 
         </section>
 
-<section class= "bg-white">
+<section class= "bg-white rounded-lg mt-0">
     <!-- seat section -->
-    <div class=" grid grid-cols-2 justify-between gap-44 p-7">
+    <div class=" grid grid-cols-2 justify-between gap-44 p-7 ">
 
           <div>
             <h1 class="border-b-2 border-dashed text-2xl py-3 font-bold">Select Your Seat</h1>
@@ -170,7 +192,7 @@
             </div>
             
             <!-- BUTTONS OF SEATS -->
-            
+
             <div class="grid justify-center items-center gap-4 grid-cols-4 mt-2">
                 <button id="A1" class="add-btn  border-none  btn w-20">A1</button>
                 <button id="B1" class="add-btn  border-none  btn w-20">A2</button>
@@ -231,19 +253,25 @@
 
             <div  class="bg-gray-100 flex justify-around rounded-lg">
                
-                <ul id="selected-seats">
-               <li  class="text-xl font-bold">Seat <span class="text-green-400" id="seats-booking">0</span></li>
-               </ul>
+                <div >
+                  <ul id="selected-seats">
+                  <li  class="text-xl font-bold border-b-2 border-dotted border-lime-500 ">Seat <span class="text-green-400" id="seats-booking">0</span></li>
+                  </ul>
+                </div>
 
          
-                <ul id="selected-class">
-                   <li class="text-xl font-bold">Class</li>
-                </ul>
+                <div>
+                  <ul  id="selected-class">
+                    <li class="text-xl font-bold border-b-2 border-dotted border-lime-500">Class</li>
+                 </ul>
+                </div>
 
-                <ul id="selected-price">
-                      <li class="text-xl font-bold">price</li>
+               <div>
+                <ul  id="selected-price">
+                  <li class="text-xl font-bold border-b-2 border-dotted border-lime-500">Price</li>
 
-                </ul>
+            </ul>
+               </div>
             </div>
          
 
