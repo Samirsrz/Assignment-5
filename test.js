@@ -20,7 +20,7 @@ const allBtn = document.getElementsByClassName('add-btn');
 
 for(const btn of allBtn){
     btn.addEventListener('click', function(e){
-     
+        btn.classList.add('bg-green-300');
        
       const seatsLeft = document.getElementById('seats-left');
       const correctedSeatsLeft = parseInt(seatsLeft.innerText);
@@ -75,13 +75,10 @@ for(const btn of allBtn){
 
 
           btn.disabled = true;    
-          btn.classList.add('bg-green-300');
+          
         
     }
     
-   
-
-
     })
 }
 
@@ -104,7 +101,7 @@ for(const btn of allBtn){
                     grandTotalElement.textContent = grandTotal.toFixed(2);
 
                     couponInput.value = '';
-                //   couponInput.style.display = 'none';
+                   couponInput.style.display = 'none';
                     
                 applyCouponButton.disabled = true;
                 }
