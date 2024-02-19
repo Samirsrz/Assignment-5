@@ -14,18 +14,14 @@ document.getElementById('started-button').addEventListener('click', function () 
 
 
 
-// function setBackgroundColorById(elementId){
-//     const element = document.getElementById(elementId);
-//     element.classList.add('bg-green-300');
-// }
-
 
 
 const allBtn = document.getElementsByClassName('add-btn');
 
 for(const btn of allBtn){
     btn.addEventListener('click', function(e){
-  
+     
+       
       const seatsLeft = document.getElementById('seats-left');
       const correctedSeatsLeft = parseInt(seatsLeft.innerText);
       const seats = correctedSeatsLeft-1;
@@ -38,8 +34,9 @@ for(const btn of allBtn){
 
       if(seats>=4){
 
-        btn.classList.add('bg-green-300');
-
+        // btn.classList.add('bg-green-300');
+        
+        
       seatsLeft.innerText = seats;
       seatsBooking.innerText = seatBooked; 
 
@@ -71,13 +68,18 @@ for(const btn of allBtn){
         const updatedPrice = correctedTotalPrice + 550;
         totalPrice.innerText = updatedPrice; 
      
-       
+        const grandTotalNew = document.getElementById('grand-total') 
+        grandTotalNew.innerText = totalPrice.innerText;
+        
 
-       
 
+
+          btn.disabled = true;    
+          btn.classList.add('bg-green-300');
         
     }
-
+    
+   
 
 
     })
