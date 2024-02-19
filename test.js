@@ -6,20 +6,36 @@ function scrollDown(sectionId) {
     }
 }
 
-document.getElementById('started-button').addEventListener('click', function () {
-    scrollToSection('paribahan-section'); // Change 'section2' to the ID of the section you want to scroll to
+document.getElementById('started-button').addEventListener('click', function (e) {
+    scrollToSection('paribahan-section'); 
 });
-
-
-
-
 
 
 
 const allBtn = document.getElementsByClassName('add-btn');
 
+
+
+
+let selectedCount = 0 ;
+
+// const allBtn = document.getElementsByClassName('add-btn');
+
 for(const btn of allBtn){
     btn.addEventListener('click', function(e){
+      
+        if(selectedCount >= 4) {
+            alert('You can only select up to 4 seats.');
+            return;
+        }
+
+        btn.classList.add('bg-green-300');
+        btn.disabled = true; 
+        selectedCount++;
+      
+      
+      
+      
         btn.classList.add('bg-green-300');
        
       const seatsLeft = document.getElementById('seats-left');
@@ -34,8 +50,7 @@ for(const btn of allBtn){
 
       if(seats>=4){
 
-        // btn.classList.add('bg-green-300');
-        
+         btn.classList.add('bg-green-300');
         
       seatsLeft.innerText = seats;
       seatsBooking.innerText = seatBooked; 
@@ -71,14 +86,10 @@ for(const btn of allBtn){
         const grandTotalNew = document.getElementById('grand-total') 
         grandTotalNew.innerText = totalPrice.innerText;
         
-
-
-
-          btn.disabled = true;    
-          
-        
     }
     
+    
+
     })
 }
 
